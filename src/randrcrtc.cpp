@@ -22,6 +22,7 @@
 #include "randroutput.h"
 #include "randrmode.h"
 #include "randrgammainfo.h"
+#include <unistd.h> // for sleep()
 
 RandRCrtc::RandRCrtc(RandRScreen *parent, RRCrtc id)
     : QObject(parent),
